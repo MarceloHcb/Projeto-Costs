@@ -1,4 +1,5 @@
 {
+  "homepage": "https://marcelohcb.github.io/Projeto-Costs/",
   "name": "costs",
   "version": "0.1.0",
   "private": true,
@@ -7,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "dom": "^0.0.3",
+    "gh-pages": "^5.0.0",
     "json-server": "^0.17.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "backend": "json-server --watch db.json --port 5000",
     "build": "react-scripts build",
