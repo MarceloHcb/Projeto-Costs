@@ -8,6 +8,7 @@ import Home from "./components/pages/Home";
 import NewProjects from "./components/pages/NewProjects";
 import Project from "./components/pages/Project";
 import Projects from "./components/pages/Projects";
+import Gifs from "./components/gifs/Gifs";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <Container customClass='min-height'>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/projects" element={<Projects />} />        
+        <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/gifs" element={<Gifs />} />       
         <Route exact path="/company" element={<Company />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/newproject" element={<NewProjects />} />
